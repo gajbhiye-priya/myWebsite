@@ -1,0 +1,54 @@
+
+.main{
+    text-align: center;
+    background-color: white;
+}
+
+
+.logo{
+    width: 150px;
+    height: 100px;
+background-color: white;    
+
+}
+mat-form-field{
+    width: 90%;
+}
+
+
+.example-radio-group {
+    display: flex;
+    flex-direction: row;
+    margin: 11px 0;
+    align-items: flex-start;
+  }
+  
+  .example-radio-button {
+    margin: 2px;
+  }
+
+  .trainer{
+    font-weight: 500;
+  }
+
+  .fitness{
+
+    font-weight: 700;
+    font-size: 40px;
+    font-style: italic;
+    color: chocolate;
+  }
+
+  .button{
+   
+position: absolute;
+    /* text-align: center; */
+    margin-top: 20px;
+    left: 650px;
+  }
+
+  .input{
+
+    height: 100px;
+
+  }

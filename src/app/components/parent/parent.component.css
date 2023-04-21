@@ -1,0 +1,102 @@
+.card-wrapper{
+    width: 600px;
+    height: 500px;
+    margin: 100px;
+   
+}
+
+.mat-mdc-card {
+    position: relative;
+    border-radius: var(--mdc-elevated-card-container-shape, var(--mdc-shape-medium, 4px));
+    background-color: var(--mdc-elevated-card-container-color, transparent);
+    border-width: 0;
+    border-style: solid;
+    border-color: var(--mdc-elevated-card-container-color, transparent);
+    height: 100%;
+}
+
+.img{
+ width: 200px;
+    /* margin-left: 50px; */
+}
+
+.content p{
+    margin-top: 10px;
+
+}
+
+.button{
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+.body{
+
+    width: 90%;
+    height:100%;
+margin: 20px;
+display: flex;
+justify-content: space-between;
+
+}
+
+.example-card {
+    max-width: 250px;
+    max-height: 1200px;
+    padding: 5px;
+  }
+  
+  .example-header-image {
+    /* background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');  */
+    background-size: cover;
+  }
+
+  h2{
+
+    text-align: center;
+  }
+
+  .selects{
+    text-align: center;
+    width:100px;
+    height: 50px;
+    border-radius: 10px;
+    color: white;
+    margin-left: 100px;
+    background-color: green;
+
+  }
+.sub{
+    text-align: center;
+}
+
+.second{
+
+    height:150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.border{
+    height: 60px;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 1px solid;
+}
+
+.border h2{
+    text-align: left;
+    margin-left: 10px;
+    /* color: green; */
+}
+.checkout{
+
+    text-align: right;
+    height: 50px;
+    border-radius: 10px;
+    color: white;
+    margin-left: 100px;
+    background-color: green;
+}

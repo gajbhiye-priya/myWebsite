@@ -1,0 +1,46 @@
+<div class="container">
+
+    <h2> Parent </h2>
+
+    <div class="box">
+ <h1> User</h1>
+<h2> UserName</h2>
+ <table>
+<tr>
+    <th> Username</th> 
+    <br>
+    <th> remove</th>
+</tr>
+<tr *ngFor="let user of users">
+    <td>{{user}} </td>
+
+    <td> Remove</td>    
+</tr>
+
+
+ </table>
+
+
+    </div>
+    <br><br>
+    <div class="box">
+        <h1> Admin</h1>
+        <h2> AdminName :</h2>
+
+        <table>
+            <tr>
+                <th> AdminName</th> 
+                <br>
+                <th> remove</th>
+            </tr>
+            <td> Nisha</td>
+            
+            <td> Remove</td>
+            
+             </table>
+    </div>
+
+    
+</div>
+<br><br>
+<app-child-task (dataTransfer) ="pushUsers($event)" ></app-child-task>

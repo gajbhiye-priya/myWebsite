@@ -1,0 +1,24 @@
+.container{
+
+    width:50%;
+    height:1200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container h1{
+
+    text-align: center;
+    color: crimson;
+    font-weight: 600;
+}
+ .form{
+   height: 800px;
+    display: flex;
+    flex-direction: column;
+
+    /* background-color: red; */
+
+
+
+} 

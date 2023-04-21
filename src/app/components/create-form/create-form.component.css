@@ -1,0 +1,41 @@
+.container{
+
+    width:40%;
+    height:900px;
+   
+}
+
+.container h1{
+
+    text-align: left;
+  font-weight: 600;
+  color: blueviolet;
+}
+
+.form{
+
+    margin-left: 200px;
+
+}
+
+mat-form-field{
+margin-bottom: 0;
+    width:300px;
+    height:60px;
+}
+
+/* .input{
+    width:200px;
+    height: 100px;
+} */
+
+.label{
+
+    font-size: 17px;
+    font-weight: 30px;
+
+}
+
+.file-name {
+    margin-left: 1rem; /* or whatever margin you require */
+}

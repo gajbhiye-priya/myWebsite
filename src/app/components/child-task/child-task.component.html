@@ -1,0 +1,43 @@
+
+<div class ="container">
+    <h2> Child </h2>
+<div class="box">
+
+    <mat-form-field appearance="outline" >
+        <mat-label>create User</mat-label>
+        <input  #uname matInput placeholder="Placeholder">
+        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      </mat-form-field>
+      <button  (click)="createUser(uname)"  class="btn"> create User</button>
+    
+      <!-- <table>
+        <tbody>
+        <tr *ngFor="let user of users">
+            <td> {{user.firstname}}</td>
+        </tr>
+    </tbody>
+    </table> -->
+<h3 *ngIf="count"> Total Count: <strong>{{count}} </strong> </h3>
+
+</div>
+<br><br>
+<div class="box">
+    <mat-form-field appearance="outline">
+        <mat-label>create Admin</mat-label>
+        <input #adminss matInput placeholder="Placeholder">
+        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      </mat-form-field>
+      <button (click)="createAdmin(adminss)" class="btn"> create Admin</button>
+
+      <!-- <table>
+        <tbody>
+        <tr *ngFor="let admin of admins">
+            <td> {{admin.adminname}}</td>
+        </tr>
+    </tbody>
+    </table> -->
+      <h3 *ngIf="adminCount"> Total count: <strong>{{adminCount}}</strong></h3>
+
+</div>
+</div>
+

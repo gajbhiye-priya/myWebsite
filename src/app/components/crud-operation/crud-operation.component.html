@@ -1,0 +1,210 @@
+<div class="container">
+    <h1> Registration Form</h1>
+
+
+    <form action="">
+        <div class="form-field">
+            <p>
+                <mat-form-field appearance="outline">
+                    <mat-label>FirstName</mat-label>
+                    <input matInput placeholder="Enter Firstname ">
+
+                    <mat-icon matSuffix>account_circle</mat-icon>
+                </mat-form-field>
+            </p>
+
+            <p>
+                <mat-form-field appearance="outline">
+                    <mat-label>LastName</mat-label>
+                    <input matInput placeholder="Enter Lastname">
+                    <mat-icon matSuffix>account_circle</mat-icon>
+                </mat-form-field>
+            </p>
+
+        </div>
+
+        <div class="form-field">
+            <p>
+                <mat-form-field appearance="outline">
+                    <mat-label>Email</mat-label>
+                    <input matInput placeholder=" Enter Email">
+                    <mat-icon matSuffix>email</mat-icon>
+                </mat-form-field>
+            </p>
+
+
+            <p>
+                <mat-form-field appearance="outline">
+                    <mat-label>Contact Number</mat-label>
+                    <input matInput placeholder="Enter ContactNumber">
+                    <mat-icon matSuffix>phone</mat-icon>
+                </mat-form-field>
+            </p>
+
+        </div>
+
+        <div class="form-field">
+            <p>
+                <mat-form-field appearance="outline">
+                    <mat-label>Weight</mat-label>
+                    <input matInput placeholder="Enter Your Weight">
+                    <mat-icon matSuffix>line_weight</mat-icon>
+                </mat-form-field>
+            </p>
+
+
+            <p>
+                <mat-form-field appearance="outline">
+                    <mat-label>Height</mat-label>
+                    <input matInput placeholder="Enter your height">
+                    <mat-icon matSuffix>line_style</mat-icon>
+                </mat-form-field>
+            </p>
+
+        </div>
+
+
+        <div class="form-field">
+            <p>
+                <mat-form-field appearance="outline">
+                    <mat-label>BMI</mat-label>
+                    <input matInput placeholder="BMI">
+                    <mat-icon matSuffix><i class="fa fa-sort-numeric-desc" aria-hidden="true"></i></mat-icon>
+                </mat-form-field>
+            </p>
+
+
+            <p>
+                <mat-form-field appearance="outline">
+                    <mat-label>BMI Result</mat-label>
+                    <input matInput placeholder="BMI result">
+                    <mat-icon matSuffix>check</mat-icon>
+                </mat-form-field>
+            </p>
+
+        </div>
+
+
+        <div class="radio-buton">
+
+            <p>
+                <label class="trainer">Do you require trainer?</label>
+                <br>
+                <mat-radio-group aria-label="Select an option">
+                    <mat-radio-button value="1">Yes</mat-radio-button>
+                    <mat-radio-button value="2">No</mat-radio-button>
+                    <mat-radio-button value="3">Neither</mat-radio-button>
+                </mat-radio-group>
+
+            </p>
+
+            <p class=" gender">
+                <label class="trainer">Gender</label>
+                <br>
+                <mat-radio-group aria-label="Select an option">
+                    <mat-radio-button value="1">Male</mat-radio-button>
+                    <mat-radio-button value="2">Female</mat-radio-button>
+                    <mat-radio-button value="3">Transgender</mat-radio-button>
+                </mat-radio-group>
+
+            </p>
+        </div>
+
+
+
+        <div class="form-field">
+            <p>
+                <mat-form-field class="address" appearance="outline">
+                    <mat-label>Address1</mat-label>
+                    <input matInput placeholder="Enter address">
+                </mat-form-field>
+            </p>
+
+
+            <p>
+                <mat-form-field class="address" appearance="outline">
+                    <mat-label>Address1</mat-label>
+                    <input matInput placeholder="Enter Address">
+                </mat-form-field>
+            </p>
+
+        </div>
+
+        <div class="form-field">
+            <p>
+                <mat-form-field appearance="outline">
+                    <mat-label>Select City</mat-label>
+                    <mat-select [(ngModel)]="selectedValue">
+                        <mat-option *ngFor="let citi of cities" [value]="citi.city">
+                            {{citi.city}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </p>
+
+
+            <p>
+                <mat-form-field appearance="outline">
+                    <mat-label>Select Country</mat-label>
+                    <mat-select [(ngModel)]="selectCountry">
+                        <mat-option *ngFor="let countri of countries" [value]="countri.country">
+                            {{countri.country}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </p>
+
+        </div>
+
+
+        <div class="form-field">
+            <p>
+                <mat-form-field appearance="outline">
+                    <mat-label>Choose color</mat-label>
+                    <input class="colors" matInput type="color" placeholder="Enter Firstname ">
+                </mat-form-field>
+            </p>
+
+            <p>
+                <mat-form-field class="example-full-width" appearance="outline">
+                    <mat-label>Choose a date</mat-label>
+                    <input matInput [matDatepicker]="picker">
+                    <mat-hint>MM/DD/YYYY</mat-hint>
+                    <mat-datepicker-toggle matIconSuffix [for]="picker">
+                        <mat-icon matDatepickerToggleIcon>date_range</mat-icon>
+                    </mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                </mat-form-field>
+            </p>
+
+        </div>
+
+
+        <div class="form-field">
+            <p>
+                <mat-form-field appearance="outline">
+                    <mat-label>Select Profile Photo</mat-label>
+                    <!-- <input matInput type="file" placeholder=" adsafsdf"> -->
+                    <input matInput type="file"  placeholder=" adsafsdf" id="certificates" class="file-upload" multiple>
+                </mat-form-field>
+            </p> 
+
+            <p>
+                <mat-form-field class="example-full-width" appearance="outline">
+                    <mat-label>Choose a date</mat-label>
+                    <input matInput [matDatepicker]="picker">
+                    <mat-hint>MM/DD/YYYY</mat-hint>
+                    <mat-datepicker-toggle matIconSuffix [for]="picker">
+                        <mat-icon matDatepickerToggleIcon>date_range</mat-icon>
+                    </mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                </mat-form-field>
+            </p>
+
+         </div>  
+
+    </form>
+
+
+
+</div>

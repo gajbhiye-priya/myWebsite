@@ -1,0 +1,46 @@
+.box{
+
+    width:450px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 10px solid;
+     background-color:rgb(241, 241, 241) ; 
+}
+.container{
+
+    display: flex;
+    justify-content: space-around;
+}   
+
+mat-form-field{
+margin-top: 20px;
+margin-left: 20px;
+    height: 55px;
+    background:rgb(253, 242, 242);
+}
+
+.btn{
+
+    width:130px;
+    background: green;
+    height: 50px;
+color: white;
+}
+
+.box h3{
+margin-top: 50px;
+
+}
+
+.box h1{
+
+    margin-top: 30px;
+    margin-left: 40px;
+    color: rgb(10, 179, 10);
+    font-weight: 600;
+}
+
+.box h2{
+
+    margin-left: 20px;
+}

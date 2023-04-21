@@ -1,0 +1,148 @@
+<div class="container">
+
+    <h1> Student Registration Form </h1>
+
+    
+    <form action="">
+<table>  
+  <tr>
+    <td>  <label class="label">First Name</label> </td>
+    <td> 
+      <mat-form-field appearance="outline">
+      <input  matInput  type="text" >
+      <mat-icon matSuffix>account_circle</mat-icon> 
+    </mat-form-field>
+    </td>
+  </tr>
+
+
+  <tr>
+    <td>  <label class="label">Last Name</label> </td>
+    <td> 
+      <mat-form-field appearance="outline">
+      <input  matInput  type="text" >
+      <mat-icon matSuffix>account_circle</mat-icon> 
+    </mat-form-field>
+    </td>
+  </tr>
+
+
+
+  <tr>
+    <td>  <label class="label">Contact Number </label> </td>
+    <td> 
+      <mat-form-field appearance="outline">
+      <input  matInput  type="text" >
+      <mat-icon matSuffix>phone</mat-icon> 
+    </mat-form-field>
+    </td>
+  </tr>
+
+
+  <tr>
+    <td>  <label class="label">Email</label> </td>
+    <td> 
+      <mat-form-field appearance="outline">
+      <input  matInput type="text" >
+      <mat-icon matSuffix>email</mat-icon> 
+    </mat-form-field>
+    </td>
+  </tr>
+     
+
+  <tr>
+    <td>  <label class="label">Password</label> </td>
+    <td> 
+      <mat-form-field appearance="outline">
+      <input  matInput type="password" >
+      <mat-icon matSuffix>password</mat-icon> 
+    </mat-form-field>
+    </td>
+  </tr>
+     
+
+  <tr>
+    <td>  <label class="label">Country</label> </td>
+    <td> 
+      <mat-form-field appearance="outline">
+      <input  matInput  type="text" >
+      <!-- <mat-icon matSuffix>password</mat-icon>  -->
+    </mat-form-field> <br>
+    </td>
+  </tr>
+       
+  <tr>
+    <td>  <label class="label">Do you have bank account:&nbsp; </label> </td> 
+        <td>    <mat-radio-group aria-label="Select an option">  &nbsp;
+          <mat-radio-button value="1">Yes</mat-radio-button>
+          <mat-radio-button value="2"> No</mat-radio-button>
+        </mat-radio-group>
+    </td>
+  </tr>
+
+
+
+  <tr>
+    <td>  <label class="label">Date of Birth</label> </td>
+    <td> 
+      <mat-form-field appearance="outline">
+      <input  matInput  [matDatepicker]="picker" placeholder="MM/DD/YYYY " >
+      <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+     
+    </mat-form-field>
+    </td>
+  </tr>
+     
+
+  <tr>
+    <td>  <label class="label">Available in Week</label> </td>
+    <td> 
+      <mat-form-field appearance="outline">
+      <input  matInput type="week" >
+    </mat-form-field>
+    </td>
+  </tr>
+
+  <tr>
+    <td>  <label class="label">Preferred in Time</label> </td>
+    <td> 
+      <mat-form-field appearance="outline">
+        <input  matInput type="time"  >
+    </mat-form-field>
+    </td>
+  </tr>
+
+  <tr>
+    <td>  <label class="label">Select Profile photo</label> </td>
+    <td> 
+      
+      <button type="button" mat-raised-button  color="accent" (click)="fileInput.click()">Choose File</button>  
+      <input hidden (change)="onFileSelected($event)" #fileInput type="file">
+      <span class="file-name">{{selectedFile?.name}}</span>
+
+    </td>
+  </tr>
+
+  <br> 
+  <tr>
+    <td>  <label class="label">Select Certificate </label> </td>
+    <td> 
+      
+      <button type="button" mat-raised-button  color="accent" (click)="fileInput.click()">Choose File</button>  
+      <input hidden (change)="onFileSelected($event)" #fileInput type="file">
+      <span class="file-name">{{selectedFile?.name}}</span>
+
+    </td>
+  </tr>
+
+
+
+  
+
+      </table>
+
+
+    </form>
+
+</div>

@@ -1,0 +1,111 @@
+<!-- <div class="card-wrapper"> -->
+
+  <h1>Parent Component</h1>
+
+    <!-- <mat-card class="example-card">
+      <mat-card-header>
+        <img
+          src="https://www.freakyjolly.com/wp-content/uploads/2021/07/cropped-cropped-fj-logo-192-removebg-preview-e1625997712615-1.png"
+          mat-card-avatar />
+        <mat-card-title>FreakyJolly.com</mat-card-title>
+        <mat-card-subtitle>
+          Learn Web Development with Easy Tutorials
+        </mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image class ="img" src="../../../assets/image/images.jpg" alt="Angular Logo">
+      <mat-card-content class="content">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.
+        </p>
+      </mat-card-content>
+  
+      <mat-card-actions class="button">
+        <button mat-raised-button color="accent">LIKE</button>
+        <button mat-raised-button color="primary">SHARE</button>
+      </mat-card-actions>
+    </mat-card>
+
+     -->
+
+    
+  <!-- <app-child  [sendName]="myName"></app-child> -->
+
+  <!-- <app-child  (fullName)="parentFunction($event)"></app-child>
+<p>{{adultName}}</p>
+  </div> -->
+
+
+<!-- <app-child (newItemEvent)="addItem($event)"></app-child> -->
+
+<div class="border" *ngIf="!addtoCard"> 
+ 
+<h2 > {{addCardSelected}} is Add to card selected </h2>
+<button class="checkout"> checkout </button>
+
+</div>
+
+<div class="body">
+
+  <div>
+  <mat-card class="example-card">
+    <img  class="img" mat-card-image src="../../../assets/image/laptop1.jpg" alt="Photo of a Shiba Inu">
+     <h2>Laptop </h2>
+   
+    <mat-card-actions>
+      <button (click)="onSelect('Laptop')" class="select" mat-raised-button color="accent"> Select product</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
+
+<div>
+  <mat-card class="example-card">
+    <img class="img" mat-card-image src="../../../assets/image/mobile.jpg" alt="Photo of a Shiba Inu">
+     <h2>Mobile </h2>
+   
+    <mat-card-actions>
+      <button  (click)="onSelect('Mobile')"  class="select" mat-raised-button color="accent"> Select product</button>
+    </mat-card-actions>
+  </mat-card>
+
+</div>
+
+<div>
+
+  <mat-card class="example-card">
+    <img class="img" mat-card-image src="../../../assets/image/television.jpg" alt="Photo of a Shiba Inu">
+     <h2>Television </h2>
+   
+    <mat-card-actions>
+      <button   (click)="onSelect('Television')"  class="select" mat-raised-button color="accent"> Select product</button>
+    </mat-card-actions>
+  </mat-card>
+
+</div>
+
+<div>
+  <mat-card class="example-card">
+    <img class="img" mat-card-image src="../../../assets/image/washing.jpg" alt="Photo of a Shiba Inu">
+     <h2>Washing Machin </h2>
+   
+    <mat-card-actions>
+      <button (click)="onSelect('Washing Machin')"  class="select" mat-raised-button color="accent"> Select product</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
+
+
+</div>
+
+<br><br>
+<div class="second">
+  <mat-card>
+ 
+      <h2  *ngIf="!isSelected"  class="sub"> Please select above produts</h2>
+      <h2 *ngIf="isSelected"> {{selectedProduct}} is selected</h2>
+      <button  (click)="cardProduct() "  class="selects"> Add to card</button>
+  
+  </mat-card>
+
+</div>

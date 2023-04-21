@@ -1,0 +1,108 @@
+
+
+<button class= "button" mat-raised-button color="warn" (click)="onClick()"> Add cart</button>
+
+<p> {{result}}</p>
+
+<!-- <input type="text" value="myInput" (click)="myEvent($event)">
+<p>{{resultt}}</p> -->
+
+<button  value="laptop"  mat-raised-button color="warn"   (click)="onAddtocart($event)"> Laptop</button>
+<br> <br>
+<button  value="TV"  (click)="onAddtocart($event)"> TV</button>
+<br> <br>
+<button  value="Mobile"  (click)="onAddtocart($event)"> Mobile</button>
+
+<button  value="charger"  (copy)="onAddtocart($event)"> Charger</button>
+
+<p>{{display}}</p>
+
+<button mat-raised-button color="success"  (click)="clickmee()">clickMe!</button>
+<br> <br> 
+<p *ngIf="isValid">{{show}}</p>
+
+
+<!-- <select >
+    <option value="" > choose options</option>
+    <option value="Laptop"> Laptop</option>
+    <option value="Mobile">Mobile</option>
+    <option value="TV">TV</option>
+    <option value="Washing machin">Washing machine</option>
+</select> -->
+<div>
+<mat-form-field appearance="outline" >
+    <mat-label>choose options</mat-label>
+    <select matNativeControl required (change)="getProduct($event)">
+        <option value="default">Select product</option>
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="mercedes">Mercedes</option>
+      <option value="audi">Audi</option>
+    </select>
+  </mat-form-field>
+</div>
+
+  <div [ngSwitch]="selector"> {{selector}}
+    <h2 *ngSwitchDefault> Please select product </h2>
+<h2 *ngSwitchCase="'Volvo'">Volvo </h2>
+<h2 *ngSwitchCase="'Saab'"> Saab</h2>
+<h2 *ngSwitchCase="'Mercedes'"> Mercedes</h2>
+<h2 *ngSwitchCase="'Audi'"> Audi</h2>
+  </div>
+
+  <div>
+    <table>
+        <thead>
+            <tr>
+                <td> ProductId</td>
+                <td> ProductName</td>
+                <td> Price</td>
+                <td>Desc</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of products">
+                <td> {{item.productId}}</td>
+                <td>{{item.productName}} </td>
+                <td> {{item.price}}</td>
+                <td>{{item.color}}</td>
+            </tr>
+        </tbody>
+    </table>
+  </div>
+
+  <br><br><br> 
+
+  <div>
+
+       <input type="text" #uname    placeholder="search name">
+       <button  mat-raised-button color="primary" (click)="create(uname)"> create user </button>
+ &nbsp;  &nbsp;
+     
+       <button  mat-raised-button color="warn" (click)="remove()"> remove</button>
+  </div>
+  <br> 
+  <div>
+
+    <h2> Enter Username</h2>
+  
+    <table>
+        <tbody>
+        <tr *ngFor="let user of users ; index as i">
+            <td> {{user.firstname}}</td>
+
+<td> <button  mat-raised-button color="warn" (click)="removeItem(i)"> Remove</button></td>
+        </tr>
+    </tbody>
+    </table>
+  </div>
+
+  <div class="page-area">
+    <h2>Contact Us</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet odio iure deserunt at, officiis unde vel voluptas quibusdam veniam architecto nam accusantium consequuntur, suscipit voluptatem, quaerat magni ducimus dolore delectus?</p>
+  </div>
+
+  <form action="">
+
+    <input type="text" >
+  </form>

@@ -1,0 +1,33 @@
+.box{
+
+    width:450px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 10px solid;
+     background-color:rgb(212, 195, 195) ; 
+}
+.container{
+
+    display: flex;
+    justify-content: space-around;
+}   
+
+mat-form-field{
+margin-top: 20px;
+margin-left: 20px;
+    height: 55px;
+    background:rgb(253, 242, 242);
+}
+
+.btn{
+
+    width:130px;
+    background: green;
+    height: 50px;
+color: white;
+}
+
+.box h3{
+margin-top: 50px;
+
+}

@@ -1,0 +1,22 @@
+<p>page-one works!</p>
+
+<div class=" page">
+
+    <input type="text" placeholder="enter name" [(ngModel)]="firstName">
+
+    <button  mat-basic-button color="accent" (click)="openLink()"> click me</button>
+
+    <mat-checkbox [indeterminate]="true"> check me </mat-checkbox>
+
+    <mat-checkbox disabled> disable </mat-checkbox>
+    
+    <mat-checkbox labelPosition="after"> set position afetr</mat-checkbox>
+    <mat-checkbox labelPosition="before"> set position before </mat-checkbox>
+
+    <span class="select">
+<mat-checkbox (click)="openCheckbox($event)"> Select All</mat-checkbox>
+
+<mat-checkbox  [(ngModel)]="check.completed"  *ngFor="let data of check">{{data.value}}</mat-checkbox>
+
+</span>
+</div>
